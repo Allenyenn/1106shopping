@@ -36,29 +36,35 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="65dp"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal">
-        <CheckBox
-            android:layout_width="wrap_content"
+
+        <TextView
+            android:layout_width="10dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="全選"/>
+            android:layout_weight="1"
+            android:paddingRight="50dp"
+            android:text="總計:"
+            android:textColor="#F63A19"
+            android:textSize="34sp" />
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="right"
             android:paddingRight="10dp"
+            android:text="$total"
             android:textColor="#F63A19"
-            android:text="合計:"/>
+            android:textSize="34sp" />
+
         <Button
-            android:id="@+id/jiesuan_button"
+            android:id="@+id/button"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
             android:gravity="center"
             android:padding="10dp"
-            android:text="結算"/>
+            android:text="確定"/>
     </LinearLayout>
 </LinearLayout>
