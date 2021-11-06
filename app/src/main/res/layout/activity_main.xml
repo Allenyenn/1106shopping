@@ -46,7 +46,7 @@
             android:layout_weight="1"
             android:paddingRight="50dp"
             android:text="總計:"
-            android:textColor="#F63A19"
+            android:textColor="#FF000000"
             android:textSize="34sp" />
 
         <TextView
@@ -55,7 +55,7 @@
             android:layout_weight="1"
             android:paddingRight="10dp"
             android:text="$total"
-            android:textColor="#F63A19"
+            android:textColor="#FF000000"
             android:textSize="34sp" />
 
         <Button
