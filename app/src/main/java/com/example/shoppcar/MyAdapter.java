@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
+
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     private List<String>mData;
     MyAdapter(List<String>data){

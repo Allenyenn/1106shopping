@@ -4,9 +4,27 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
-import java.util.ArrayList;
+import android.provider.ContactsContract;
 
+import java.util.ArrayList;
+import java.util.Date;
+
+import javax.xml.validation.Schema;
+
+class Data{
+    int id;
+    String ticket_id;
+    String items;
+    Integer total;
+    public Data(int i,String t,String it,Integer to){
+        id=i;
+        ticket_id=t;
+        items=it;
+        total=to;
+    }
+}
 public class MainActivity extends AppCompatActivity {
+
 private RecyclerView rcv;
 private MyAdapter adapter;
 private ArrayList<String>mData=new ArrayList<>();
@@ -23,5 +41,6 @@ private ArrayList<String>mData=new ArrayList<>();
     adapter=new MyAdapter(mData);
         rcv.setAdapter(adapter);
     }
+
 
 }
