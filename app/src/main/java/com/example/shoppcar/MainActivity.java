@@ -11,18 +11,7 @@ import java.util.Date;
 
 import javax.xml.validation.Schema;
 
-class Data{
-    int id;
-    String ticket_id;
-    String items;
-    Integer total;
-    public Data(int i,String t,String it,Integer to){
-        id=i;
-        ticket_id=t;
-        items=it;
-        total=to;
-    }
-}
+
 public class MainActivity extends AppCompatActivity {
 
 private RecyclerView rcv;
@@ -38,7 +27,7 @@ private ArrayList<String>mData=new ArrayList<>();
         rcv=(RecyclerView)findViewById(R.id.rcv);
         rcv.setLayoutManager((new LinearLayoutManager(this)));
         rcv.addItemDecoration((new DividerItemDecoration(this,DividerItemDecoration.VERTICAL)));
-    adapter=new MyAdapter(mData);
+        adapter=new MyAdapter(mData);
         rcv.setAdapter(adapter);
     }
 
